@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  font-size: 70%;
+  font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+body { 
+  height: 100%;
+}
+
+.header {
+   background-color: #f16c6c;
+   height: 60px;
+   font-size: 2rem;
+}
+
+.btn btn-default {
+     text-align: center;
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    background-color: #faf9fa;
+    color: #ff0000;
+    text-align: center;
+}
+
+tr{
+  border:1px solid #000000;
+  font-size: 80%;
+  color: #7d7d7d;
+  height:50px;
+  width: 50px;
+}
+
+td{
+  border:1px solid #000000;
+  height:50px;
+  width: 50px;
+}
+
+th{
+  border:1px solid #000000;
+  height:50px;
+  width: 500px;
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  text-align: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+　float:left;
+}
+
+.image_area{
+  width: 100%;
+  margin-top: 1px;
+
+}
+
+.wrapper{
+  margin-top: 10px;
+  padding-bottom: 100px;
+}
+
+.parent a:hover{
+  background-color: #99FFFF;
+  opacity: 0.4;
+}
+
+.content{
+  width: 760px;
+  margin-left:20px;
+  font-size: 1.5rem;
+}
+
+.side_menu li{
+  background-color: #808000;
+  height: 6rem;
+  margin-bottom: 10px;
+}
+
+.side_menu li a{
+  font-size:2rem;
+  color: #000080;
+  text-decoration: none;
+  display: block;
+  padding: 2rem;
+}
+
+.top_menu li {
+  float: left;
+  padding: 15px;
+  margin-left:25px;
+
+}
+.top_menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block
+}
+.top_menu li ul{
+   width: 15px;
+   display: none;
+   position: absolute;
+}
+
+h1 {
+    padding: 0.4em 0.5em;
+    color: #7d7d7d;
+    background: #eec7c7;
+    border-left: solid 5px #b8bfc6;
+    border-bottom: solid 3px #d7d7d7;
+    text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.846153846;
+  border-left: #50BBDD solid 4px;
+  padding: 5px 20px 5px 20px;
+  color: #585858;
+}
+
+h3 {
+    padding: 0.4em 0.5em;
+    border-top: solid 3px #ffccef;
+    border-bottom: solid 3px #ffccef;
+    margin-bottom: 30px;
+}
+
+.footer{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  background-color: #f16c6c;
+  display: table;
+}
+.footer p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}

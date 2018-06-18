@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+   <div class="container clearfix">
+	 <header class="header clearfix">
+     <nav>
+      <ul class="top_menu clearfix">
+       <li><%= link_to 'つぶやく', new_blog_path, class: 'btn btn-default' %></li>
+       <li><a href="#">リンク</a></l>
+      </ul>
+     </nav>
+    </header>
+    
+<article class="content clearfix">
+<%= form_with(model: @blog, local: true) do |form| %>
+  <% if @blog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @blog.errors.count %>件のエラーがあります。</h2>
+      <ul>
+      <% @blog.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <h1>つぶやき編集フォーム</h1>
+  <div class="blog_title">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit %>
+<% end %>
+</article>
+
+<footer class="footer">
+        <p>footer</p>
+</footer>
+</div>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+   <div class="container clearfix">
+	 <header class="header clearfix">
+     <nav>
+      <ul class="top_menu clearfix">
+       <li><%= link_to 'つぶやく', new_blog_path, class: 'btn btn-default' %></li>
+      </ul>
+     </nav>
+    </header>
+
+<article class="content clearfix">
+<h1>つぶやき詳細画面</h1>
+<p>内容: <%= @blog.content %></p>
+</article>
+
+<footer class="footer">
+        <p>footer</p>
+      </footer>
+</div>

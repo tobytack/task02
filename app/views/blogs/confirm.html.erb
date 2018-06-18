@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+   <div class="container clearfix">
+	 <header class="header clearfix">
+     <nav>
+      <ul class="top_menu clearfix">
+       <li><%= link_to 'つぶやく', new_blog_path, class: 'btn btn-default' %></li>
+      </ul>
+     </nav>
+    </header>
+
+<article class="content clearfix">
+<h3>以下の内容でつぶやく</h3>
+
+<%= form_with(model: @blog, url: blogs_path, local: true) do |form| %>
+<%= form.hidden_field :content %>
+
+  <p>つぶやくこと:<%= @blog.content %></p>
+  <%= form.submit  "つぶやく" %>
+<% end %>
+
+<%= form_with(model: @blog, url: new_blog_path, local: true, method: 'get') do |form| %>
+  <%= form.hidden_field :content %>
+  <%= form.submit "もどる", name: 'back' %>
+<% end %>
+
+<footer class="footer">
+    <p>footer</p>
+</footer>
+</div>

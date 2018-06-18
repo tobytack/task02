@@ -1,0 +1,17 @@
+<%= form_with(model: @blog, local: true ,url: confirm_blogs_path ) do |form| %>
+  <p><%= notice %></p>
+  <% if @blog.errors.any? %>
+  <% @blog.errors.full_messages.each do |msg| %>
+  <li><%= msg %></li>
+  <% end %>
+  </ul>
+  <% end %>
+
+  <div class="blog_title">
+    <%= form.label :つぶやくこと %>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit %>
+<% end %>
+
+<%= link_to "つぶやいた一覧にもどる", blogs_path %>
